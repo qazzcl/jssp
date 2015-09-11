@@ -4,7 +4,11 @@ JWave
 
 What is it and what it is not?!
 
-Java implementation of a discrete fourier transform (DFT) algorithm, a fast wavelet transform (FWT) algorithm, and a wavelet packet transform (WPT) algorithm in 1-D, 2-D, and 3-D.
+Java implementation of
+* a discrete fourier transform (DFT) algorithm,
+* a fast wavelet transform (FWT) algorithm, and
+* a wavelet packet transform (WPT) algorithm
+in 1-D, 2-D, and 3-D.
 
 The wavelet transform algorithms FWT & WPT are using normalized orthogonal (orthonormal) Haar, Coiflet, Daubechies, and Legendre wavelets as known by the multi-scale analysis.
 Additionally the BiOrthogonal wavelet family, Symlets and the Discrete Mayer FIR filter are available too. At the moment the implemented Battle23, CDF53, and CDF97 are not available.
