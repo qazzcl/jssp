@@ -2,3 +2,5 @@
 .idea/
 target/
 *.swp
+node_modules/
+components/
