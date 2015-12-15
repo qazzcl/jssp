@@ -1,0 +1,67 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.font-color{
+  color: #FFFEF1;
+}
+.nav-interval{
+  padding-right: 20px;
+}
+.triangle-form{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0px
+}
+.triangle-div{
+  height: 35px;
+  padding:5px;
+  background-color: #ebebeb;margin: 15px
+}
+.triangle-btn-down{
+   padding: 5px;
+   border: 0px;
+   height: 25px;
+   padding-top: 4px;
+   width: 26px
+ }
+.triangle-btn-up{
+  padding: 5px;
+  border: 0px;
+  height: 25px;
+  padding-top: 3px;
+  width: 26px
+}
+.tr-selceted-mod {
+    background: #4d90fe
+}
+.table > tbody > tr.info > td {
+    background-color: #4d90fe
+}

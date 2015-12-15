@@ -1,0 +1,20 @@
+<form class="form-group col-md-12" style="margin-bottom: 0px">
+    <div class="panel" style="margin-bottom: 0px">
+        <div class="panel-heading" style="height: 35px;padding-top: 0px;padding-bottom: 0px;border-bottom: 0px">
+            <div class="form-group" ng-class="style" style="margin-bottom: 0px;height: 35px;padding-left: 0px">
+                <ul class="nav nav-tabs nav-pills nav-justified" style="border: 0px;height: inherit">
+                    <li ng-repeat="pane in panes" ng-class="{active:pane.selected}" role="presentation" style="height: inherit">
+                        <a style="padding-top: 6px;padding-bottom: 7px" href="" ng-click="select(pane)">{{ pane.name }}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group col-md-2 has-feedback" ng-class="offsetStyle" style="margin-bottom: 5px;padding-right: 0px;height: 30px" ng-show='isShow'>
+                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true" style="height: 30px"></span>
+                <input type="text" class="form-control" style="height: 30px" ng-model="searchWords" enter-event="enterHandler({keyWord:searchWords})">
+            </div>
+        </div>
+        <div class="panel-body" style="padding-top: 0px;padding-bottom: 0px" ng-transclude>
+
+        </div>
+    </div>
+</form>

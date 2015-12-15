@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Project Home</title>
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header ng-include="'templates/navBar.html'" ng-show="alreadyLogin" style="height: 50px;margin-bottom: 15px"></header>
+<div ng-view>
+
+</div>
+<script src="components/jquery/dist/jquery.js"></script>
+<script src="components/bootstrap/js/bootstrap.min.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
+<script src="components/angular-resource/angular-resource.js"></script>
+<script src="components/socket.io-client/socket.io.js"></script>
+<script src="components/angular-smart-table/dist/smart-table.js"></script>
+<script src="components/amcharts3/amcharts/amcharts.js"></script>
+<script src="components/amcharts3/amcharts/serial.js"></script>
+<script src="app.js"></script>
+<script src="directives.js"></script>
+<script src="services.js"></script>
+<script src="financial-modeling/main.js"></script>
+<script src="machine-learning/main.js"></script>
+</body>
+</html>
