@@ -1,0 +1,24 @@
+import qpid_helper
+import json
+
+enabled = True
+broker = '127.0.0.1:5672'
+address = 'topic.demo'
+namespace = '/demo'
+event = 'demo event'
+socketio = None
+subscriber = qpid_helper.Subscriber()
+
+
+@subscriber.on(broker, address)
+def message_processor(message):
+    content = json.loads(message.content)
+    print content
+    socketio.emit(event, content, namespace=namespace)
+
+
+
+
+
+
+
