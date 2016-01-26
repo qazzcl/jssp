@@ -1,7 +1,8 @@
 *.pyc
 *.iml
+*.out
+*.swp
 .idea/
 target/
-*.swp
 node_modules/
 components/

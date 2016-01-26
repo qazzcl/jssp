@@ -11,6 +11,9 @@ async_mode = 'gevent'
 host = '0.0.0.0'
 port = 5001
 
+if len(sys.argv) > 1:
+    port = int(sys.argv[1])
+
 app = Flask(__name__)
 socketio = SocketIO(app, async_mode=async_mode)
 

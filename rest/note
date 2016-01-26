@@ -1,1 +1,3 @@
 qpid-config add queue demo.service
+
+sudo pip install flask_restful flask_cors
