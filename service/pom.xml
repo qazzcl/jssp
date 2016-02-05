@@ -54,6 +54,17 @@
             <artifactId>joda-time</artifactId>
             <version>2.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.3.8.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>4.3.8.Final</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.jms</groupId>
@@ -64,11 +75,6 @@
             <groupId>org.apache.qpid</groupId>
             <artifactId>qpid-client</artifactId>
             <version>${qpid.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>quantlib</groupId>
-            <artifactId>quantlib-jni</artifactId>
-            <version>0.0.18</version>
         </dependency>
         <dependency>
             <groupId>org.apache.qpid</groupId>

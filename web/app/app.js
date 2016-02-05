@@ -8,13 +8,13 @@ angular.module('app', [
     'app.machine-learning'
 ]).config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when("/", {
-        controller: 'FMCtrl',
-        templateUrl: 'financial-modeling/main.html'
+        controller: 'fmCtrl',
+        templateUrl: 'html'
     }).when("/ml", {
-        controller: 'MLCtrl',
+        controller: 'mlCtrl',
         templateUrl: 'machine-learning/main.html'
     }).when("/fm", {
-        controller: 'FMCtrl',
+        controller: 'fmCtrl',
         templateUrl: 'financial-modeling/main.html'
     }).otherwise({
         redirectTo: '/'

@@ -4,10 +4,10 @@ angular.module('app.machine-learning', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/ml', {
             templateUrl: 'machine-learning/main.html',
-            controller: 'MLCtrl'
+            controller: mlLCtrl'
         });
     }])
-    .controller('MLCtrl', function ($rootScope, $scope) {
+    .controller('mlCtrl', function ($rootScope, $scope) {
         $scope.status = 'good'
         $scope.doPlot = function() {
             plot();

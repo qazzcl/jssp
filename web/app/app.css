@@ -16,7 +16,7 @@
 }
 
 .menu > li {
-  display: inline;
+  display: inline-block;
 }
 
 .menu > li:before {
@@ -35,6 +35,8 @@
 .nav-interval{
   padding-right: 20px;
 }
+
+
 .triangle-form{
   padding-left: 15px;
   padding-right: 15px;

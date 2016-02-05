@@ -4,10 +4,10 @@ angular.module('app.financial-modeling', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/fm', {
             templateUrl: 'financial-modeling/main.html',
-            controller: 'FMCtrl'
+            controller: 'fmCtrl'
         });
     }])
-    .controller('FMCtrl', function($rootScope, $scope) {
+    .controller('fmCtrl', function($rootScope, $scope) {
         $rootScope.alreadyLogin = true;
         $scope.bondSelect = function () {
             if (bondMarketDataAll.length == 0) {
